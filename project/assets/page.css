@@ -1,0 +1,47 @@
+*{
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* ::-webkit-scrollbar {
+  width: 10px;
+} */
+
+body{
+  height: 100%;
+}
+
+a{
+  text-decoration: none;
+}
+
+h1{
+  font-size: 40px;
+}
+
+.title h1{
+  font-weight: bold;
+}
+
+nav{
+  box-shadow: 0 0 5px rgb(201, 201, 201);
+  /* height: 70px; */
+}
+
+.inputan{
+  margin-top: 50px;
+}
+
+.icon img{
+  width: 16px;
+  height: 16px;
+}
+
+#landing-section{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: calc(100vh - 56px);
+}
+
+
+

@@ -1,0 +1,10 @@
+h1{
+  font-size: 18px;;
+}
+form{
+  border: 1px solid #cdcdcd;
+}
+
+.button-group{
+  justify-content: space-between;
+}
