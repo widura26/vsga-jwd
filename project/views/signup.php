@@ -16,7 +16,7 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap"
       rel="stylesheet">
-    <link rel="stylesheet" href="assets/page.css">
+    <link rel="stylesheet" href="assets/css/page.css">
     <link rel="icon" href="assets/google.png" type="image/x-icon">
     <title>JWD</title>
   </head>

@@ -35,7 +35,7 @@
 }
 
 .clicked {
-  background-color: rgb(42, 250, 0);
+  background-color: rgb(195, 195, 195);
 }
 .order:hover {
   cursor: pointer;

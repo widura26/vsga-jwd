@@ -1,4 +1,3 @@
-//make form order
   const container = document.querySelector('.container');
   const form = document.createElement('div');
   form.setAttribute("class", "form-order");
@@ -31,9 +30,8 @@
       price: 50000
     },
   ];
+  
   items.forEach((item) => card(item.name, item.price, item.id));
-  // const products = [...new Set(items.map((item) => { return item}))];
-  // products.map((item) => card(item.name, item.price, item.id));
 
   let allItem = [];
 
@@ -67,7 +65,6 @@
     order.addEventListener('click', () => {
       order.classList.toggle('clicked') ? add(i) : remove(i);
     })
-    
   }
 
   function add(id){
@@ -78,30 +75,18 @@
       total = total + price;
       price2.innerHTML = total;
     }
-    // const num = allItem.map((items) => {
-    //   const itemPrice = parseInt(items.price);
-    //   tot = tot + itemPrice;
-    //   price2.innerHTML = tot;
-    // })
   }
 
   function remove(id){
     let itemId = id;
-    //kode dibawah digunakan untuk mencari index data berdasarkan properti.
     const indexItem = allItem.findIndex(function(item) {
       return item.id === itemId;
     });
-    // if(indexToRemove !== -1){
     allItem.splice(indexItem, 1);
-    // }
-    let total = allItem.reduce(function(acc, curr) {
-      return acc + curr.price;
+    let total = allItem.reduce(function(acc, item) {
+      return acc + item.price;
     }, 0);
 
     price2.innerHTML = total;
-    // const num = allItem.map((items) => {
-    //   const itemPrice = parseInt(items.price);
-    //   total = total - itemPrice;
-    //   price2.innerHTML = total;
-    // })
+    // console.log(allItem);
   }
